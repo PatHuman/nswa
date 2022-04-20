@@ -96,7 +96,7 @@ html, body {
 
 /* section */
 .section {
-  padding: 90px 0;
+  padding: 45px 0;
   position: relative;
   z-index: 5;
   background-color: #ffffff; }
@@ -108,11 +108,11 @@ html, body {
   text-align: center;
   color: #000000;
   padding-bottom: 10px;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
   text-transform: uppercase; }
   @media only screen and (max-width: 992px) {
     .section-heading {
-      margin-bottom: 60px; } }
+      margin-bottom: 25px; } }
   .section-heading span {
     margin-bottom: 15px;
     letter-spacing: 1px;
@@ -850,7 +850,7 @@ blockquote p {
 /* .bg-06 {   background-image: url(https://media.istockphoto.com/vectors/pest-control-design-insect-vector-design-bug-illustration-vector-id1139930309); } */
 /* .bg-06 {   background-image: url(https://media.istockphoto.com/photos/fumigator-sanitizing-cleaning-and-disinfection-coronavirus-pandemic-picture-id1308788817); } */
 /* .bg-06 {   background-image: url(https://media.istockphoto.com/photos/spraying-trees-against-pests-picture-id544094886); } */
-/* .bg-06 {   background-image: url(../images/ns/nextstop_plan.jpg); } */
+/* .bg-06 {   background-image: url(../images/ns/autoroute1.jpg); } */
 .bg-06 {   background-image: url(../images/ns/trap1.jpg); }
 
 .bg-07 {
@@ -992,7 +992,7 @@ blockquote p {
           color: #000000; }
 
 .expertise {
-  background: url(../images/backgrounds/bg-expertise.jpg) no-repeat center center; }
+  background: url(../images/ns/ble.jpg) no-repeat center center; }
   .expertise .section-heading h1, .expertise .section-heading p {
     color: #ffffff; }
   .expertise .section-heading::after {
@@ -1174,13 +1174,19 @@ blockquote p {
   position: relative;
   width: 100%; }
 
+  .da-thumbs li   iframe {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%; }
+
 .da-thumbs li a {
   overflow: hidden; }
 
 .da-thumbs li a .portfolio-detail-overlay {
   position: absolute;
   background: #fff;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(216, 235, 241, 0.603);
   padding: 20px;
   text-align: center;
   width: 100%;
@@ -1265,7 +1271,8 @@ blockquote p {
     padding-left: 0; }
 
 .testimonial {
-  background: url(../images/backgrounds/bg-testimonial.jpg) no-repeat center center;
+  /* background: url(../images/backgrounds/bg-testimonial.jpg) no-repeat center center; */
+  background: url(../images/ns/train1.jpg) no-repeat center center;
   color: #fdfdfd;
   background-size: cover; }
   .testimonial .carosel-wrapper {
@@ -1462,7 +1469,9 @@ blockquote p {
     border-color: #FAFAFA; }
 
 .funfacts {
-  background: url(../images/backgrounds/bg-fun-fact.jpg) no-repeat center center;
+  /* background: url(../images/backgrounds/bg-fun-fact.jpg) no-repeat center center; */
+  /* background: url(../images/ns/train2.jpg) no-repeat center center; */
+  background: url(../images/ns/adrian-infernus.jpg) no-repeat center center;
   background-size: cover; }
   .funfacts .counter-box {
     text-align: center; }
@@ -2347,3 +2356,14 @@ blockquote p {
     vertical-align: middle; }
     .four-o-four .four-o-four-inner h1 {
       font-weight: bold; }
+
+.read-text{
+  display: none;
+  padding: auto;
+}
+.product{
+  background: url(../images/ns/nextstop_plan.jpg) no-repeat center center;
+}
+.mt-2{
+  margin-top: 2px;
+}

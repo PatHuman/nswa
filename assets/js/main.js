@@ -10,7 +10,31 @@ $(document).ready(function () {
 //     $('.selectpicker').selectpicker();
 // });
 
-	$('.selectpicker').selectpicker();
+	$(".isotope > li > a").on("click", function(ev){
+		ev.preventDefault()
+
+	})
+ 
+
+	$(".readmore").on("click",function(ev){
+		ev.preventDefault()
+		var oText = {
+			on: "READ LESS",
+			off: "READ MORE"
+		}
+		// var text = $(this).next("p")  
+		var text = $(this).prev("p")
+		console.log(text)  
+		if($(text).is(":visible")){
+			$(this).text(oText.off) 
+			$(text).hide()
+		} else{
+			 
+			$(text).show()
+			$(this).text(oText.on) 
+		}
+	})
+	 
 
     $("#contactForm").submit(function(e){
 
