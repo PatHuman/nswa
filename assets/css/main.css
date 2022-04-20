@@ -2,6 +2,13 @@ html, body {
   position: relative;
   overflow-x: hidden; }
 
+  .main-navigation .navbar-nav  .lang li a {
+    margin-top: 10px;
+    
+  }
+  .main-navigation .navbar-nav  .lang li> a {
+    text-decoration: none;
+  }
 /*-----------------------------------------
     Page Loader
 ------------------------------------------*/
@@ -628,6 +635,10 @@ blockquote p {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     position: relative; }
+    li span .lang a {
+      margin-top: 10px;
+      text-decoration: none;
+    }
     @media only screen and (max-width: 767px) {
       .main-navigation .navbar-nav li a {
         border-bottom: 1px solid rgba(73, 71, 71, 0.15); } }
@@ -638,9 +649,9 @@ blockquote p {
       transition: all 0.3s; }
     .main-navigation .navbar-nav li a:hover, .main-navigation .navbar-nav li a:focus {
       background-color: rgba(255, 255, 255, 0); }
-      .main-navigation .navbar-nav li a:hover span, .main-navigation .navbar-nav li a:focus span {
+      /* .main-navigation .navbar-nav li a:hover span, .main-navigation .navbar-nav li a:focus span {
         background: white;
-        color: black; }
+        color: black; } */
         @media only screen and (max-width: 767px) {
           .main-navigation .navbar-nav li a:hover span, .main-navigation .navbar-nav li a:focus span {
             background: transparent;
@@ -839,6 +850,7 @@ blockquote p {
 /* .bg-06 {   background-image: url(https://media.istockphoto.com/vectors/pest-control-design-insect-vector-design-bug-illustration-vector-id1139930309); } */
 /* .bg-06 {   background-image: url(https://media.istockphoto.com/photos/fumigator-sanitizing-cleaning-and-disinfection-coronavirus-pandemic-picture-id1308788817); } */
 /* .bg-06 {   background-image: url(https://media.istockphoto.com/photos/spraying-trees-against-pests-picture-id544094886); } */
+/* .bg-06 {   background-image: url(../images/ns/nextstop_plan.jpg); } */
 .bg-06 {   background-image: url(../images/ns/trap1.jpg); }
 
 .bg-07 {
@@ -864,7 +876,8 @@ blockquote p {
 .header-inner {
   padding-top: 200px;
   background-color: black;
-  background-image: url(../images/backgrounds/bg-testimonial.jpg);
+  /* background-image: url(../images/backgrounds/bg-testimonial.jpg); */
+  background-image: url(../images/ns/trap1.jpg);
   background-size: cover;
   text-align: center; }
   .header-inner .breadcrumb {

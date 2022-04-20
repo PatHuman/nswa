@@ -5,6 +5,13 @@
 
 $(document).ready(function () {
 
+// 	$(function(){
+// 		console.log("======!!!!")
+//     $('.selectpicker').selectpicker();
+// });
+
+	$('.selectpicker').selectpicker();
+
     $("#contactForm").submit(function(e){
 
         e.preventDefault();
