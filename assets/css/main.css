@@ -2367,3 +2367,17 @@ blockquote p {
 .mt-2{
   margin-top: 2px;
 }
+
+.graphic-log img{
+  display: none;
+}
+ @media (max-width: 767px) {
+  img .mob{display: block;}
+  img .desk{ display: none;}
+  }
+
+  @media  (min-width: 770)  
+{
+  .mob{display: none;}
+  .desk{ display: block;}
+} 

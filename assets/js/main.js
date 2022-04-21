@@ -2,6 +2,20 @@
 /*------------------------------------------
  Contact form
  ------------------------------------------*/
+ $(window).on('resize', function(data){
+	var screenZise = $( document ).width()
+	    if (screenZise <= 600) {
+			$("#mob").removeClass("hide")
+			$("#desk").addClass("hide") 
+		} else {
+			 
+			 $("#mob").addClass("hide")
+			$("#desk").removeClass("hide")
+		 }
+	   
+		console.log($( document ).width())
+	});
+	
 
 $(document).ready(function () {
 
@@ -9,6 +23,19 @@ $(document).ready(function () {
 // 		console.log("======!!!!")
 //     $('.selectpicker').selectpicker();
 // });
+console.log($( window ).width(), $( document ).width())
+// $(".mob .desk").hide()
+var screenZise = $( document ).width()
+
+
+	if(screenZise > 767){
+		$("#mob").addClass("hide")
+		$("#desk").removeClass("hide")
+	} else {
+		$("#mob").removeClass("hide")
+		$("#desk").addClass("hide")
+	}
+
 
 	$(".isotope > li > a").on("click", function(ev){
 		ev.preventDefault()
@@ -23,8 +50,7 @@ $(document).ready(function () {
 			off: "READ MORE"
 		}
 		// var text = $(this).next("p")  
-		var text = $(this).prev("p")
-		console.log(text)  
+		var text = $(this).prev("p") 
 		if($(text).is(":visible")){
 			$(this).text(oText.off) 
 			$(text).hide()
