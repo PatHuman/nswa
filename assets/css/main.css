@@ -112,7 +112,7 @@ html, body {
   text-transform: uppercase; }
   @media only screen and (max-width: 992px) {
     .section-heading {
-      margin-bottom: 25px; } }
+      margin-bottom: 20px; } }
   .section-heading span {
     margin-bottom: 15px;
     letter-spacing: 1px;
@@ -359,7 +359,9 @@ a:focus {
 html,
 body {
   min-height: 100%;
-  color: #595959;
+  color: #383232;
+  font-family: 'Roboto', sans-serif;
+ 
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.45;
@@ -1123,7 +1125,7 @@ blockquote p {
       height: 400px;
       overflow-x: hidden;
       overflow-y: auto;
-      margin-bottom: 26px;
+      margin-bottom: 20px;
       position: relative; }
     .portfolio .section-content .isotop-filter {
       text-align: center;
@@ -2381,3 +2383,19 @@ blockquote p {
   .mob{display: none;}
   .desk{ display: block;}
 } 
+
+.justified{ 
+  text-align: justify;
+  text-justify:  inter-word;
+  font-size: 18px;
+  color: #000000;
+ 
+}
+.bottom{
+  margin-top: 5px;
+  margin-bottom: 45px;
+}
+/* .box-header{
+  font-size: 20px;
+}
+  */

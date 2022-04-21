@@ -7,13 +7,15 @@
 	    if (screenZise <= 600) {
 			$("#mob").removeClass("hide")
 			$("#desk").addClass("hide") 
+			$(".presence-label").addClass("text-center")
 		} else {
 			 
 			 $("#mob").addClass("hide")
 			$("#desk").removeClass("hide")
+			$(".presence-label").removeClass("text-center")
 		 }
 	   
-		console.log($( document ).width())
+		// console.log($( document ).width())
 	});
 	
 
@@ -23,17 +25,21 @@ $(document).ready(function () {
 // 		console.log("======!!!!")
 //     $('.selectpicker').selectpicker();
 // });
-console.log($( window ).width(), $( document ).width())
+// console.log($( window ).width(), $( document ).width())
 // $(".mob .desk").hide()
+
+
 var screenZise = $( document ).width()
 
 
-	if(screenZise > 767){
-		$("#mob").addClass("hide")
-		$("#desk").removeClass("hide")
-	} else {
-		$("#mob").removeClass("hide")
-		$("#desk").addClass("hide")
+if(screenZise > 767){
+	$("#mob").addClass("hide")
+	$("#desk").removeClass("hide")
+	$(".presence-label").removeClass("text-center")
+} else {
+	$("#mob").removeClass("hide")
+	$("#desk").addClass("hide")
+	$(".presence-label").addClass("text-center")
 	}
 
 
@@ -132,6 +138,8 @@ var screenZise = $( document ).width()
 (function(){
 
     if($("#map").length == 0 || !google) return;
+
+	//AIzaSyAJ6iEHx92ofzfdlCuwjZ695La3Jwbk7NI
 
     // When the window has finished loading create our google map below
     google.maps.event.addDomListener(window, 'load', init);
